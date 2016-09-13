@@ -6,9 +6,11 @@ All of these questions deal with the ticket machine example bundled in this repo
 ```
 public void setPrice(int cost)
 ```
-
+setPrice has a void return value
 ## Complete the body of the setPrice method so that it assigns the value of its parameter to the price field. Write your new method in the `lab04-ticket-machine`.
-
+public void setPrice(int cost){ 
+    price = cost;    
+    }  
 ## Complete the body of the following method, whose purpose is to add the value of its parameter to a field named `score`.
 ```
 /**
@@ -16,11 +18,11 @@ public void setPrice(int cost)
  */
 public void increase(int points)
 {
-  ...
+   score= score+ points;
 }
 ```
 ## Is the `increase` method in the previous question a mutator? If so, how could you demonstrate this?
-
+yes because it control changes of a variable
 ## Complete the following method, whose purpose is to subtract the value of its parameter from a field named `price`. Add your new method to the `lab04-ticket-machine`.
 ```
 /**
@@ -28,7 +30,7 @@ public void increase(int points)
  */
 public void discount(int amount)
 {
-  ...
+  price= price- amount;
 }
 ```
 
@@ -36,7 +38,7 @@ public void discount(int amount)
 ```
 System.out.println("My cat has green eyes.");
 ```
-
+"My cat has green eyes."
 ## Add a method called `prompt` to the `TicketMachine` class in the `lab04-ticket-machine`. This should have a `void` return type and take no parameters. The body of the method should print the following single line of output: 
 ```
 Please insert the correct amount of money.
